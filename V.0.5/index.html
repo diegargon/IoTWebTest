@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+input{width: 100px; height: 100px;}
+.center{text-align: center;}
+.container{margin: auto; width: 100%; max-width: 600px; border: 0px solid black;}
+.photo{float:left;border:0px solid blue;}
+.photo img{width: 98%;max-width: 200px}
+.info{width:100%;padding:0px;margin:0px;padding-left: 5px;padding-top: 5px;border: 0px solid red;line-height: 4px;padding:0;}
+.info span {font-weight: bold;}
+.controls {}
+.buttons {border: 0px solid red}
+.btnOn {background-color: #D1B800;}
+.btnOff {background-color: #DADADA;}
+.controls p, .mzero {padding:0;margin:0;}
+</style>
+<title>[title]</title>
+</head>
+<body>
+<div class="container">
+ <h1 class="center mzero">[ssid]</h1>
+ <div class="info">
+  <div class="photo">
+   <img src="photo.jpg"/>
+  </div>
+  <div class="contact">
+   <p><span>Nombre: </span>[name]</p> 
+   <p><span>Propietario: </span>[owner]</p>
+   <p><span>Telefono: </span><a href="tel:[tlf]">[tlf]</a></p>
+   <p><span>Chip: </span>[chip]</p>
+  </div>
+ </div>
+ <div class="controls">
+  <div class="buttons">
+   <form action="/" method="POST">
+   <input class="[C_LUCES]" type="submit" name="btnToggle" value="LUCES"/>
+   <input class="[C_PITIDO]" type="submit" name="btnToggle" value="BUZZER"/>
+  </form>
+  </div>
+  <p><span>Status: </span>[status]</p>
+ </div>            
+ <footer>Copyright @ 2016 Diegargon / diego@envigo.net</footer>
+</div>
+</body>
+</html>
